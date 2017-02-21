@@ -147,30 +147,41 @@ h1 {
     align-self: center;
 }
 
+
+.pattern {
+    background: url(images/pattern.png) repeat RGBA(254, 212, 207, 1.00);
+    background-size: 90%;
+    background-position: top left ;
+}
+
 #nav .logo {
     height: 50px;
 }
 
 #nav {
     padding: 10px 0;
-    padding-top: 5px;
+   
 }
-#nav li{
+#nav li, #footer li{
    list-style: none;
    display: inline-block;
-   padding: 5px 0;  
+    
 }
-#nav .menu a{
+#nav .menu {
+    margin-top: 5px;
+}
+#nav .menu a, #footer a{
     text-transform: uppercase;
     margin: 0 15px;
     font-weight: 200;
     font-style: normal;
 }
-#nav .socials {
+.socials {
     text-align: right;
+    margin-top: 5px;
 }
 
-#nav .socials img {
+.socials img {
    height: 15px;
    width: 20px;
    object-fit: contain;
@@ -183,7 +194,7 @@ h1 {
 
 .title {
     text-align: center;
-    padding: 50px 0;
+    padding: 60px 0;
 }
 .title h1{
     font-weight: 200;
@@ -197,24 +208,31 @@ h1 {
 .props  {
     text-align: center;
     padding: 35px 0;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
 }
 .props div {
     display: inline-block;
-    width: 20%;
+    width: 25%;
     position: relative;
-    height: 100px;
-    max-width: 300px;
+    height: 50px;
+    max-width: 270px;
 }
 .props img {
     width: 20%;
-    height: 50px;
-    margin-right: 5%;
-    background: #333;
+    height: 35px;
+    max-width: 35px;
+    margin-right: 15px;
+    object-fit: contain;
+    object-position: top;
     display: inline-block;
     vertical-align: top;
 }
 .props p {
     width: 70%;
+    margin-top: 8px;
+    max-width: 220px;
     display: inline-block;
     vertical-align: top;
     
@@ -224,6 +242,305 @@ text-align: left;
 
 } 
 
+#props .items {
+    text-align: center;
+}
+#props .item {
+    display: inline-block;
+    width: 30%;
+    margin: 0 1.5%;
+    margin-bottom: 50px;
+    text-align: center;
+    
+}
+#props .item div:nth-child(1) {
+     border: 2px solid white;
+     border-radius: 50px;
+     width: 100px;
+     margin: auto;
+     margin-bottom: 10px;
+     display: block;
+     height: 100px;
+}
+#props .item img {
+  background: #eee;
+  height: 80px;
+       border-radius: 100px;
+       margin: 10px;
+  width: 80px;
+}
+#props .item div:nth-child(2) {
+     border: 2px solid white;
+     border-radius: 2px;
+    padding: 10px;
+    padding-bottom: 7px;
+    
+}
+#props .item div h2 {
+    text-transform: uppercase;
+    font-size: 1.3rem;
+
+    font-weight: 400;
+}
+#props .item p {
+    margin-top: 10px;
+}
+
+
+
+#header {
+    background: url(images/header.png);
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+
+#footer {
+    padding: 20px;
+}
+
+
+#footer .socials img {
+   height: 25px;
+   width: 30px;
+   object-fit: contain;
+   margin: 0px 10px;
+}
+
+#footer-logo > * {
+    display: block;
+    margin: auto;
+    
+}
+#footer-logo > img {
+    height: 60px;
+    width: 30%;
+    object-fit: contain;
+
+}
+#footer-logo > p {
+    display: block;
+    margin: auto;
+    padding: 15px 0;
+    text-transform: uppercase;
+    width: 30%;
+text-align: center;
+
+    
+}
+
+#who p{
+    display: inline-block;
+    width: calc(49.5% - 50px);
+    margin: 0 25px;
+vertical-align: middle;    
+    
+}
+#who img{
+    width: calc(50% - 80px);
+     margin: 0 40px;
+    display: inline-block;
+vertical-align: middle;    
+object-fit: contain;    
+}
+#who > div > img{
+    height: 5px;
+    margin: 60px auto;
+    width: 100%;
+    
+    object-fit: contain;
+    object-position: center;
+    }
+
+
+
+.image-block {
+    max-height: 550px;
+    height: 65vh;
+    position: relative;
+}
+.image-block::after {
+    content: "";
+    position: absolute;
+    height: 30vh;
+    width: 100%;
+    background: linear-gradient(to bottom, rgba(255,255,255,0.69) 0%,
+     rgba(255,255,255,0.69) 0%, 
+     rgba(255,255,255,0.69) 14%,
+      rgba(255,255,255,0.0) 100%);
+    max-height: 250px;
+    top: 0;
+    z-index: 0;
+
+}
+.image-block > div{
+    z-index: 10;
+    position: relative;
+    text-align: center;
+}
+.image-block > div > *{
+   display: block;
+}
+.image-block .title {
+    padding-top: 125px;
+    padding-bottom: 10px;
+}
+.image-block p{
+    font-size: 1.2rem;
+    font-weight: 400;
+     text-transform: uppercase;
+}
+.image-block img{
+    height: 5px;
+    margin: 60px auto;
+    width: 100px;
+    
+    object-fit: contain;
+    object-position: center;
+    }
+.image-block a{
+    padding: 20px 30px;
+    padding-bottom: 17px;
+    background: RGBA(182, 221, 216, 1.00);
+    text-transform: uppercase;
+    display: inline-block;
+    font-size: 1.2rem;
+    font-weight: 400;
+    border-radius: 3px;
+    object-fit: contain;
+    /* z-index: 10; */
+    position: relative;
+    object-position: center;
+    transition: 0.3s;
+}
+    .image-block a::after {
+      content: "";
+      border-radius: 3px;
+      position: absolute;
+      background: RGBA(184, 191, 190, 1.00);
+      height: 10px;
+      width: 100%;
+      left: 0;
+      z-index: -10;
+      bottom: -5px;
+}
+
+#get {
+    background: url(images/1.png);
+    background-size: cover;
+    background-position: center;
+    
+}
+
+#get2 {
+    background: url(images/3.png);
+    background-size: cover;
+    background-position: center;
+    
+}
+
+#reasons {
+    background: url(images/2.png);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    max-height: 550px;
+    height: 65vh;
+    position: relative;
+}
+#reasons .title > p {
+    font-size: 1.1rem;
+    margin-top: 10px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#steps {
+   margin-left: 0px;
+   position: relative;
+   height: 180px;
+   /* margin-bottom: -100px; */
+   overflow: hidden;
+}
+.dots {
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    height: 60px;
+    justify-content: center !important
+}
+.dot {
+   display: inline-block;
+   position: relative;
+   margin: 0 20px;
+   vertical-align: bottom;
+}
+.dot p {
+   margin-top: 5px;
+    
+    font-size: 1.7rem;
+    font-weight: 200;
+   transition: 0.3s;
+    
+}
+.dot::after {
+   content: "";
+   height: 10px;
+   margin-top: 5px;
+   width: 10px;
+   transition: 0.3s;
+   left: calc(50% - 5px);
+   background: RGBA(252, 248, 248, 1.00);
+   border-radius: 3px;
+   position: absolute; 
+}
+.dot.active p{
+    font-size: 2rem;
+   margin-top: 0px;
+    
+     color: RGBA(34, 34, 34, 1.00);
+}
+.dot.active::after{
+    background: RGBA(34, 34, 34, 1.00);
+}
+.step {
+    display: inline-block;
+    z-index: 10;
+    width: 100%;
+    height: 160px;
+    position: absolute;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+.step div {
+    position: relative;
+    height: inherit;
+}
+.step .heading{
+    font-size: 2rem;
+    width: 600px;
+    margin: auto;
+    text-align: center;
+    text-transform: uppercase;
+    align-self: center ;
+    z-index: 10;
+    display: inline-block;
+    position: relative;
+}
+.step .back{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    color: RGBA(81, 76, 73, 1.00);
+    text-align: center;
+    top: 0;
+    font-size: 12rem;
+    font-weight: 100;
+}
 
 
 
@@ -232,6 +549,78 @@ text-align: left;
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.step:nth-child(1)
+{
+  left: 0;
+}
+.step:nth-child(2)
+{
+  left: 100vw;
+}
+.step:nth-child(3)
+{
+  left: 200vw;
+}
+.step:nth-child(4)
+{
+  left: 300vw;
+}
+.step:nth-child(5)
+{
+  left: 400vw;
+}
+.step:nth-child(6)
+{
+  left: 500vw;
+}
+.step:nth-child(7)
+{
+  left: 600vw;
+}
+.step:nth-child(8)
+{
+  left: 700vw;
+}
 
 
 
