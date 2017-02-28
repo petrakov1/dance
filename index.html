@@ -1,17 +1,19 @@
 <!--Created by Petrakov-->
 <!--Designed by VladShe -->
-<!-- http://phink.agency/ -->
+<!-- http://phink.team/ -->
 <!DOCTYPE html>
-<html>
+<html lang="ru" xml:lang="ru" xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-    <title>The Dancing Women</title>
+    <title>The Dancing Women - Раскрой себя и мир танца</title>
     <meta charset="utf-8" />
     <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="format-detection" content="telephone=no">
-    <meta name="keywords" content="" />
-    <meta name="description" content="" />
+    <meta name="keywords" content="Dancing woman, Dancing, Woman, Lifestyle, Fitness, Yoga, Travels, Vlog, Alexander, Tikhomirov, Top, YouTube, Crazy, Russians, Love, Sexy, Family, GoPro, Лайфстайл, Видео, Девочки, Попки, Тихомиров, Путешествия, Йога, Фитнес, Трэвел, Влог, Фитнес программа, Лучшая фитнес программа, Мария, Хареография, Блоггер, Dancer, Choreographer, Voyager, Blogger, Life, goals, best yoga dvd, dvd program, boho beautiful, tone it up dvd, best fitness program, best yoga program, best yoga channel, best youtube channel, juliana semenova, mark spicoluk, best digital yoga program, yoga for beginners, beginner fitness program, best yoga for women, female fitness program, best weight loss program, yoga dvd for weight loss, 21 day fix, blogilates, best pilates program, pilates for beginners, yoga and pilates for men, best pilates workout"
+    />
+    <meta name="description" content="MARIA MAYER – профессиональный преподаватель танцев, хореограф, финалистка и призер чемпионатов Америки и международных соревнований."
+    />
     <link href="css/style.css" rel="stylesheet">
     <link href="css/fonts/stylesheet.css" rel="stylesheet">
     <script src="js/jquery-2.1.4.min.js"></script>
@@ -23,8 +25,8 @@
             <img src="css/images/logo.png" alt="logo" class="logo">
             <ul class="menu">
                 <li><a href="">онлайн-курс</a></li>
-                <li><a href="">автор</a></li>
-                <li><a href="">отзывы</a></li>
+                <li><a href="#who">автор</a></li>
+                <li><a href="#reviews">отзывы</a></li>
                 <li><a href="">контакты</a></li>
             </ul>
             <ul class="socials">
@@ -40,43 +42,43 @@
             </ul>
         </div>
     </section>
-    <section id="header" class="full pattern">
+    <section id="header" data-type="background" data-speed="10" class="full pattern">
         <div id="slider">
-            <div class="about">
+            <div class="about anim open-modal">
                 <div>
                     <h2>ВСЕ о курсе</h2>
                     <p>за 3 минуты</p>
                 </div>
-                <img src="css/images/icon3.png" alt="">
+                <img src="css/images/icon3.png" class="" alt="">
             </div>
-
-          <div class="arrows flex">
-                    <img src="css/images/icon2.png" class="prev-slide" alt="prev">
-                    <img src="css/images/icon2.png" class="next-slide" alt="next">
-                    
+            <div class="arrows flex">
+                <img src="css/images/icon2.png" class="prev-slide anim" alt="prev">
+                <img src="css/images/icon2.png" class="next-slide anim " alt="next">
+            </div>
+            <div class="slide flex">
+                <div>
+                    <img src="css/images/wave.png" alt="wave">
+                    <h1>рАСКРОЙ СЕБЯ И МИР<b> ТАНЦА</b></h1>
+                    <p>всего за <b>15 минут в день, каждое утро</b></p>
                 </div>
-            <img src="css/images/wave.png" alt="wave">
-                
-            <div class="slide">
-                <h1>рАСКРОЙ СЕБЯ И МИР<b> ТАНЦА</b></h1>
             </div>
         </div>
         <div class="props">
             <div>
-                <img src="css/images/icon1.png" alt="">
+                <img src="css/images/icon1.png" alt="icon1">
                 <p>для любого возраста</p>
             </div>
             <div>
-                <img src="css/images/icon1.png" alt="">
+                <img src="css/images/icon1.png" alt="icon1">
                 <p>можно заниматься в домашних усливиях</p>
             </div>
             <div>
-                <img src="css/images/icon1.png" alt="">
+                <img src="css/images/icon1.png" alt="icon1">
                 <p>доступ к онлайн-курсу 24 часа/7 дней в неделю
                 </p>
             </div>
             <div>
-                <img src="css/images/icon1.png" alt="">
+                <img src="css/images/icon1.png" alt="icon1">
                 <p>закрытое сообщество </p>
             </div>
         </div>
@@ -88,11 +90,10 @@
                 </h1>
             </div>
             <img src="css/images/wave.png" alt="wave">
-            
             <div>
                 <img src="css/images/4.png" alt="back">
                 <p>
-                    MARIA MAYER – <b>профессиональный преподаватель танцев</b>, хореограф, финалистка и <b>призер чемпионатов Америки</b>                    и международных соревнований. Более 2-х лет была ведущим тренером Manhattan Ballroom Dance Studio в Нью-Йорке,
+                   <span> MARIA MAYER </span>– <b>профессиональный преподаватель танцев</b>, хореограф, финалистка и <b>призер чемпионатов Америки</b>                    и международных соревнований. Более 2-х лет была ведущим тренером Manhattan Ballroom Dance Studio в Нью-Йорке,
                     США, главным постановщиком
                     <b>бродвейского шоу «Dancing in the spotlight»</b>, участвовала в ТВ шоу «So you think you can dance»
                     на Fox TV США.<br> В настоящее время живет и работает в Германии. <b>Популярный блогер.</b>
@@ -101,7 +102,7 @@
             <img src="css/images/wave.png" alt="wave">
         </div>
     </section>
-    <section id="get" class=" image-block">
+    <section id="get" data-type="background" data-speed="10" class=" image-block">
         <div id="">
             <div class="title">
                 <h1><b>получи курс,</b> и раскрой себя
@@ -111,7 +112,7 @@
                 доступ к онлайн-курсу 24 часа/7 дней в неделю
             </p>
             <img src="css/images/wave.png" alt="wave">
-            <a href="#">получить бесплатный курс</a>
+            <a class="open-modal">получить бесплатный курс</a>
         </div>
     </section>
     <section id="props" class="full back-pink pattern">
@@ -191,9 +192,8 @@
             <img src="css/images/wavew.png" alt="wave">
             <div>
                 <div class="arrows flex">
-                    <img src="css/images/icon4.png" class="prev-reason" alt="prev">
-                    <img src="css/images/icon4.png" class="next-reason" alt="next">
-                    
+                    <img src="css/images/icon4.png" class="prev-reason anim" alt="prev">
+                    <img src="css/images/icon4.png" class="next-reason anim" alt="next">
                 </div>
                 <div class="dots flex noselect">
                     <div class="dot active" id="1">
@@ -297,7 +297,6 @@
                 </h1>
             </div>
             <img src="css/images/wave.png" alt="wave">
-            
             <div class="flex">
                 <div class="review">
                     <img src="" alt="">
@@ -318,6 +317,9 @@
                     <a href="#">vk.com/olga</a>
                 </div>
             </div>
+            <div class="button">
+                <a href="#">смотреть больше отзывов</a>
+            </div>
         </div>
         <div id="answers">
             <div class="title">
@@ -325,12 +327,186 @@
                 </h1>
             </div>
             <div>
-                <p>
-                </p>
+                <div class="flex">
+                    <div class="answer">
+                        <p class="small">
+                            вопрос
+                        </p>
+                        <p class="big">
+                            «Курс действительно бесплатный? А почему бесплатный?»
+                        </p>
+                        <p class="small">
+                            ответ
+                        </p>
+                        <p class="big">
+                            Другие преподаватели танцев все объясняют слишком долго и нудно, мне хочется доказать Тебе, что все намного проще и быстрее.
+                            Ты можешь танцевать уже сегодня и исполнить свою самую сокровенную мечту уже до конца этой недели!
+                        </p>
+                    </div>
+                    <div class="answer">
+                        <p class="small">
+                            вопрос
+                        </p>
+                        <p class="big">
+                            «Нужна ли специальная одежда? А мне нужны каблуки?»
+                        </p>
+                        <p class="small">
+                            ответ
+                        </p>
+                        <p class="big">
+                            Специальная одежда не требуется. Ты можешь заниматься в том, в чем чувствуешь себя красивой. Туфельки на каблуках по желанию.
+                        </p>
+                    </div>
+                    <div class="answer">
+                        <p class="small">
+                            вопрос
+                        </p>
+                        <p class="big">
+                            «Заниматься нужно одной или можно со своим парнем?»
+                        </p>
+                        <p class="small">
+                            ответ
+                        </p>
+                        <p class="big">
+                            Ты можешь танцевать одна или с подружками или со своим парнем, даже собирать группу девочек и вместе заниматься, чтобы мотивировать
+                            друг друга
+                        </p>
+                    </div>
+                </div>
+                <div class="button">
+                    <a>показать больше вопросов</a>
+                </div>
+                <div class="flex hidden">
+                    <div class="answer">
+                        <p class="small">
+                            вопрос
+                        </p>
+                        <p class="big">
+                            «Заниматься нужно одной или можно со своим парнем?»
+                        </p>
+                        <p class="small">
+                            ответ
+                        </p>
+                        <p class="big">
+                            Ты можешь танцевать одна или с подружками или со своим парнем, даже собирать группу девочек и вместе заниматься, чтобы мотивировать
+                            друг друга
+                        </p>
+                    </div>
+                    <div class="answer">
+                        <p class="small">
+                            вопрос
+                        </p>
+                        <p class="big">
+                            «Сколько времени нужно уделять курсу?»
+                        </p>
+                        <p class="small">
+                            ответ
+                        </p>
+                        <p class="big">
+                            всего 15 минут в день!
+                        </p>
+                    </div>
+                    <div class="answer">
+                        <p class="small">
+                            вопрос
+                        </p>
+                        <p class="big">
+                            «Если я пропустила занятие, т.к. была занята сегодня, что делать?»
+                        </p>
+                        <p class="small">
+                            ответ
+                        </p>
+                        <p class="big">
+                            Ничего страшного! Ты можешь в любое время открыть и пройти пропущенный урок
+                        </p>
+                    </div>
+                </div>
+                <div class="flex hidden">
+                    <div class="answer">
+                        <p class="small">
+                            вопрос
+                        </p>
+                        <p class="big">
+                            «Каждый новый урок – это продолжение предыдущего?»
+                        </p>
+                        <p class="small">
+                            ответ
+                        </p>
+                        <p class="big">
+                            Каждый новый урок дополняет предыдущий, но в тоже время является абсолютно самодостаточным занятием
+                        </p>
+                    </div>
+                    <div class="answer">
+                        <p class="small">
+                            вопрос
+                        </p>
+                        <p class="big">
+                            «Когда лучше заниматься: утром или вечером?»
+                        </p>
+                        <p class="small">
+                            ответ
+                        </p>
+                        <p class="big">
+                            Мой онлайн-курс – это прежде всего заряд вдохновения. Если ты проходишь урок утром, то отличное настроение на весь день обеспечено!
+                            Но и вечером также можно танцевать! Как тебе нравится!
+                        </p>
+                    </div>
+                    <div class="answer">
+                        <p class="small">
+                            вопрос
+                        </p>
+                        <p class="big">
+                            «Ты делала это в Испании. А могу ли я заниматься в квартире или на свежем воздухе?» </p>
+                        <p class="small">
+                            ответ
+                        </p>
+                        <p class="big">
+                            Конечно, упражнения и танцевальные связки можно пробовать в любых подходящих условиях – дома, в фитнес зале, на даче, в парке,
+                            во время отпуска… </p>
+                    </div>
+                </div>
+                <!--<div class="flex hidden">
+                    <div class="answer">
+                        <p class="small">
+                            вопрос
+                        </p>
+                        <p class="big">
+                            «Курс на 7 дней или на 2 недели?»
+                        </p>
+                        <p class="small">
+                            ответ
+                        </p>
+                        <p class="big">
+                            Курс рассчитан на 7 дней </p>
+                    </div>
+                    <div class="answer">
+                        <p class="small">
+                            вопрос
+                        </p>
+                        <p class="big">
+                            «Сколько раз я могу проходить онлайн-курс? И что потом?»
+                        </p>
+                        <p class="small">
+                            ответ
+                        </p>
+                        <p class="big">
+                            У тебя будет возможность открывать уроки столько раз, сколько тебе потребуется. Можно пересматривать, можно задавать вопросы
+                            по курсу. Но, конечно, 7-дневный курс – это всего лишь 10% того, чем я мечтаю с тобой поделиться!
+                            В 21-однодневном продвинутом курсе у тебя будет шанс попробовать больше танцевальных направлений,
+                            йогу, а также упражнения на растяжку, чтобы за месяц сесть на шпагат! Мы записывали развернутый
+                            онлайн-курс на райском острове Шри Ланка и уже более 100 девочек научились танцевать по моему
+                            курсу и ощутили ту самую женскую энергию, которая помогает притягивать нужных людей и нужные
+                            события в свою жизнь!
+                        </p>
+                    </div>
+                </div>-->
+                <div class="button hidden">
+                    <a>свернуть</a>
+                </div>
             </div>
         </div>
     </section>
-    <section id="get2" class=" image-block">
+    <section id="get2" data-type="background" data-speed="10" class=" image-block">
         <div id="">
             <div class="title">
                 <h1><b>получи курс,</b> и раскрой себя
@@ -340,7 +516,7 @@
                 доступ к онлайн-курсу 24 часа/7 дней в неделю
             </p>
             <img src="css/images/wave.png" alt="wave">
-            <a href="#">получить бесплатный курс</a>
+            <a class="open-modal">получить бесплатный курс</a>
         </div>
     </section>
     <section class="back-pink">
@@ -370,8 +546,59 @@
             <p>Dancing / Traveling / Lifestyle</p>
         </div>
     </section>
+
+    <div class="modal flex">
+        <form action="">
+            <div>
+                <img src="css/images/icon5.png" class="close-modal" alt="">
+            </div>
+            <h1><b>получи курс,</b> и раскрой себя</h1>
+            <p>доступ к онлайн-курсу 24 часа/7 дней в неделю</p>
+            <img src="css/images/wave.png" alt="">
+                 <input type="text" name="username" placeholder="ваше имя" required>
+                 <input type="e-mail" name="password" placeholder="Ваш e-mail для получения курса" required>
+                 
+                 <input type="submit" name="submit" value="получить бесплатный курс">
+            <img src="css/images/wave.png" alt="">
+                 
+        </form>
+
+    </div>
+
     <script>
+
+function getCoords(elem) { // кроме IE8-
+  var box = elem.getBoundingClientRect();
+
+  return {
+    top: box.top + pageYOffset,
+    left: box.left + pageXOffset
+  };
+
+}
+
+$(document).ready(function(){
+    $('section[data-type="background"]').each(function(){
+        var $bgobj = $(this); // создаем объект
+        $(window).scroll(function(){
+            
+            console.log();
+            
+             var yPos = (document.getElementById($bgobj.attr("id")).getBoundingClientRect().top * 0.5); // вычисляем коэффициент 
+            // Присваиваем значение background-position
+            var coords = 'center '+ yPos + 'px';
+        //     // Создаем эффект Parallax Scrolling
+            $bgobj.css({ backgroundPosition: coords });
+        })
+        // $(window).scroll(function() {
+        //    
+        // });
+    });
+});
+
+
         $(document).ready(
+            
             function () {
                 $('<div class="l-top"></div><div class="l-bottom"></div>').insertAfter(".link a");
                 $(function () {
@@ -394,19 +621,24 @@
 
                 $(".open-modal").click(function () {
 
-                    $("#modal").addClass("open");
+                    $(".modal").addClass("open");
                     $("body").addClass("open");
 
                 })
                 $(".close-modal").click(function () {
 
-                    $("#modal").removeClass("open");
+                    $(".modal").removeClass("open");
                     $("body").removeClass("open");
 
                 })
 
                 var current = 1;
+                $("#answers .button").click(function () {
 
+
+                    $("#answers").toggleClass("active");
+
+                })
                 $(".dot").click(function () {
                     current = $(this).attr('id');
                     var pos = ($(this).attr('id') - 1) * 100;
@@ -417,20 +649,20 @@
                 })
                 $(".next-reason").click(function () {
                     current += 1;
-                    if (current > 8) 
+                    if (current > 8)
                         current = 1;
                     var pos = (current - 1) * 100;
                     $(".dot").removeClass("active");
-                    $("#"+current).addClass("active");
+                    $("#" + current).addClass("active");
                     $(".step").css("transform", "translateX(-" + pos + "vw)");
                 })
-                   $(".prev-reason").click(function () {
-                   current -= 1;
-                   if (current < 1) 
+                $(".prev-reason").click(function () {
+                    current -= 1;
+                    if (current < 1)
                         current = 8;
                     var pos = (current - 1) * 100;
                     $(".dot").removeClass("active");
-                    $("#"+current).addClass("active");
+                    $("#" + current).addClass("active");
                     $(".step").css("transform", "translateX(-" + pos + "vw)");
                 })
 
