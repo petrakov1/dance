@@ -1533,7 +1533,7 @@ h1 {
         margin: auto;
         position: absolute;
         top: 0;
-        z-index: 11;
+        z-index: 9;
         height: 100%;
         /* max-width: 1040px; */
     }
@@ -1571,7 +1571,6 @@ h1 {
     }
     #header {
         background: url(images/header.jpg);
-        /*     min-height: 550px; */
         background-attachment: scroll;
         background-position: center;
         background-repeat: no-repeat;
