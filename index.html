@@ -17,19 +17,21 @@
     <link href="css/style.css" rel="stylesheet">
     <link href="css/fonts/stylesheet.css" rel="stylesheet">
     <script src="js/jquery-2.1.4.min.js"></script>
+  
+
 </head>
 
 <body>
     <section id="nav" class="back-pink">
         <div class="flex wrap9">
             <img src="css/images/logo.png" alt="logo" class="logo">
-            <ul class="menu">
+            <ul class="menu mobile-hide">
                 <li><a href="">онлайн-курс</a></li>
                 <li><a href="#who">автор</a></li>
                 <li><a href="#reviews">отзывы</a></li>
                 <li><a href="">контакты</a></li>
             </ul>
-            <ul class="socials">
+            <ul class="socials mobile-hide">
                 <li>
                     <a href="" class=""><img src="css/images/yt.png" alt="youtube"></a>
                 </li>
@@ -91,7 +93,7 @@
             </div>
             <img src="css/images/wave.png" alt="wave">
             <div>
-                <img src="css/images/4.png" alt="back">
+                <img src="css/images/4.png" class="mobile-hide" alt="back">
                 <p>
                    <span> MARIA MAYER </span>– <b>профессиональный преподаватель танцев</b>, хореограф, финалистка и <b>призер чемпионатов Америки</b>                    и международных соревнований. Более 2-х лет была ведущим тренером Manhattan Ballroom Dance Studio в Нью-Йорке,
                     США, главным постановщиком
@@ -297,7 +299,8 @@
                 </h1>
             </div>
             <img src="css/images/wave.png" alt="wave">
-            <div class="flex">
+           
+            <div class="flex" id="review-slider">
                 <div class="review">
                     <img src="" alt="">
                     <h2>ОЛЬГА ДЕМЕНТЬЕВА</h2>
@@ -316,6 +319,10 @@
                     <p>Это уникальный курс от женщины, которая является олицетворением женственности и танца</p>
                     <a href="#">vk.com/olga</a>
                 </div>
+            </div>
+             <div class="arrows flex desktop-hide">
+                <img src="css/images/icon2.png" class="arrowprev anim" alt="prev">
+                <img src="css/images/icon2.png" class="arrownext anim " alt="next">
             </div>
             <div class="button">
                 <a href="#">смотреть больше отзывов</a>
@@ -521,7 +528,7 @@
     </section>
     <section class="back-pink">
         <div id="footer" class="flex">
-            <ul>
+            <ul class="mobile-hide">
                 <li><a href="">онлайн-курс</a></li>
                 <li><a href="">автор</a></li>
             </ul>
@@ -536,7 +543,7 @@
                     <a href="" class=""><img src="css/images/vk.png" alt="vkontakte"></a>
                 </li>
             </ul>
-            <ul>
+            <ul class="mobile-hide">
                 <li><a href="">отзывы</a></li>
                 <li><a href="">контакты</a></li>
             </ul>
@@ -564,7 +571,8 @@
         </form>
 
     </div>
-
+  <link rel="stylesheet" type="text/css" href="css/slick/slick.css" /> 
+   <script type="text/javascript" src="css/slick/slick.min.js"></script>
     <script>
 
 function getCoords(elem) { // кроме IE8-
@@ -579,6 +587,9 @@ function getCoords(elem) { // кроме IE8-
 
 $(document).ready(function(){
     $('section[data-type="background"]').each(function(){
+        if(window.innerWidth > 600)
+        {
+
         var $bgobj = $(this); // создаем объект
         $(window).scroll(function(){
             
@@ -593,6 +604,8 @@ $(document).ready(function(){
         // $(window).scroll(function() {
         //    
         // });
+        }
+
     });
 });
 
@@ -672,6 +685,24 @@ $(document).ready(function(){
             }
         );
     </script>
+    <script>
+    if (window.innerWidth < 600)
+    {
+ $('#review-slider').slick({
+        infinite: true,
+        //  autoplay: true,
+        //  autoplayspeed: 1000,
+      //  dots: true,
+      //  centerMode: true,
+    //    variableWidth: true,
+       slidesToShow: 1,
+       slidesToScroll: 1,
+       prevArrow: $('.arrowprev'),
+       nextArrow: $('.arrownext'),
+   });
+    }
+
+</script>
 </body>
 
 </html>
